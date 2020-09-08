@@ -1,0 +1,207 @@
+{
+  "id": "fbac76a2-a760-4989-9131-1e7ac782337e",
+  "name": "hurt",
+  "auto": true,
+  "condition": "",
+  "conditionalFollowupEvents": [],
+  "conditionalResponses": [],
+  "context": [],
+  "contexts": [],
+  "endInteraction": false,
+  "events": [],
+  "fallbackIntent": false,
+  "liveAgentHandoff": false,
+  "parentId": null,
+  "followUpIntents": [],
+  "priority": 500000,
+  "responses": [
+    {
+      "action": "",
+      "affectedContexts": [],
+      "parameters": [
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "body",
+          "dataType": "@body",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "어디가 아프세요?",
+            "어디가 안좋으세요?",
+            "어디가 아파요?"
+          ],
+          "value": "$body",
+          "outputDialogContexts": []
+        },
+        {
+          "noInputPromptMessages": [],
+          "noMatchPromptMessages": [],
+          "promptMessages": [],
+          "defaultValue": "",
+          "name": "detail",
+          "dataType": "@detail",
+          "isList": false,
+          "required": true,
+          "prompts": [
+            "어떻게 아프세요?",
+            "어떻게 아파요?"
+          ],
+          "value": "$detail",
+          "outputDialogContexts": []
+        }
+      ],
+      "defaultResponsePlatforms": {},
+      "messages": [
+        {
+          "type": "message",
+          "condition": "",
+          "speech": [
+            "네, $body가 $detail요.."
+          ]
+        }
+      ],
+      "resetContexts": false
+    }
+  ],
+  "rootParentId": null,
+  "templates": [],
+  "userSays": [
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "속이",
+          "userDefined": true,
+          "alias": "body",
+          "meta": "@body"
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "안좋아",
+          "userDefined": true,
+          "alias": "detail",
+          "meta": "@detail"
+        }
+      ],
+      "count": 1,
+      "id": "43189471-74c6-429c-ac7a-87ab0baab2a5",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "심장",
+          "userDefined": true,
+          "alias": "body",
+          "meta": "@body"
+        },
+        {
+          "text": "이",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "빨리뛰어",
+          "userDefined": true,
+          "alias": "detail",
+          "meta": "@detail"
+        }
+      ],
+      "count": 0,
+      "id": "03b67a32-d36f-4368-bc16-da5fb96f139a",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "머리",
+          "userDefined": true,
+          "alias": "body",
+          "meta": "@body"
+        },
+        {
+          "text": "가 ",
+          "userDefined": false
+        },
+        {
+          "text": "어지러워",
+          "userDefined": true,
+          "alias": "detail",
+          "meta": "@detail"
+        }
+      ],
+      "count": 0,
+      "id": "4a24bf3d-be79-45c4-8db9-f744a0fdca53",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "다리",
+          "userDefined": true,
+          "alias": "body",
+          "meta": "@body"
+        },
+        {
+          "text": "가 ",
+          "userDefined": false
+        },
+        {
+          "text": "저려",
+          "userDefined": true,
+          "alias": "detail",
+          "meta": "@detail"
+        }
+      ],
+      "count": 0,
+      "id": "3cb2b39b-42c4-4082-9715-d3e4f5d7d7fd",
+      "updated": null
+    },
+    {
+      "isTemplate": false,
+      "data": [
+        {
+          "text": "눈",
+          "userDefined": true,
+          "alias": "body",
+          "meta": "@body"
+        },
+        {
+          "text": "이",
+          "userDefined": false,
+          "meta": "@sys.ignore",
+          "alias": null
+        },
+        {
+          "text": " ",
+          "userDefined": false
+        },
+        {
+          "text": "떨려",
+          "userDefined": true,
+          "alias": "detail",
+          "meta": "@detail"
+        }
+      ],
+      "count": 0,
+      "id": "7d2f0352-f1c8-4d61-bbd8-29db42b97fb6",
+      "updated": null
+    }
+  ],
+  "webhookForSlotFilling": false,
+  "webhookUsed": false
+}
